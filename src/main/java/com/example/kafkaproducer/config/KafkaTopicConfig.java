@@ -26,10 +26,4 @@ public class KafkaTopicConfig {
         return TopicBuilder.name(topicJsonName)
                 .build();
     }
-
-//    @Bean
-//    public NewTopic topic1() {
-//        return new NewTopic("topicName", 1, (short) 1);
-//    }
-
 }

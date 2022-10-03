@@ -27,6 +27,4 @@ public class ApacheKafkaWebController {
         return ResponseEntity.ok("Json message sent to kafka topic");
     }
 
-
-
 }
