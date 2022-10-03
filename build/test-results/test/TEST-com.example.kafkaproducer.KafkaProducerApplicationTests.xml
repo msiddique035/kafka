@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.kafkaproducer.KafkaProducerApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-09-28T19:03:23" hostname="m-msiddique-sr10252" time="0.395">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.example.kafkaproducer.KafkaProducerApplicationTests" time="0.395"/>
+  <system-out><![CDATA[14:03:21.051 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+14:03:21.060 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+14:03:21.091 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.kafkaproducer.KafkaProducerApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+14:03:21.101 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.kafkaproducer.KafkaProducerApplicationTests], using SpringBootContextLoader
+14:03:21.104 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.kafkaproducer.KafkaProducerApplicationTests]: class path resource [com/example/kafkaproducer/KafkaProducerApplicationTests-context.xml] does not exist
+14:03:21.105 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.kafkaproducer.KafkaProducerApplicationTests]: class path resource [com/example/kafkaproducer/KafkaProducerApplicationTestsContext.groovy] does not exist
+14:03:21.105 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.kafkaproducer.KafkaProducerApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+14:03:21.106 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.kafkaproducer.KafkaProducerApplicationTests]: KafkaProducerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:03:21.145 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.kafkaproducer.KafkaProducerApplicationTests]
+14:03:21.185 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/msiddique.osv/Downloads/demo/build/classes/java/main/com/example/kafkaproducer/KafkaProducerApplication.class]
+14:03:21.185 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.kafkaproducer.KafkaProducerApplication for test class com.example.kafkaproducer.KafkaProducerApplicationTests
+14:03:21.259 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.kafkaproducer.KafkaProducerApplicationTests]: using defaults.
+14:03:21.259 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+14:03:21.275 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2ad3a1bb, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6bc28a83, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@324c64cd, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@13579834, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@24be2d9c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5bd73d1a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@aec50a1, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2555fff0, org.springframework.test.context.event.EventPublishingTestExecutionListener@70d2e40b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@120f38e6, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7a0e1b5e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@702ed190, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@173b9122, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7c18432b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7646731d]
+14:03:21.279 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@57f791c6 testClass = KafkaProducerApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@51650883 testClass = KafkaProducerApplicationTests, locations = '{}', classes = '{class com.example.kafkaproducer.KafkaProducerApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@696f0212, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@43aaf813, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2f6e28bc, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@765f05af, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@72ea6193, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@1e16c0aa], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.2)
+
+2022-09-28 14:03:21.546  INFO 53337 --- [    Test worker] c.e.k.KafkaProducerApplicationTests      : Starting KafkaProducerApplicationTests using Java 11.0.15 on m-msiddique-sr10252 with PID 53337 (started by msiddique.osv in /Users/msiddique.osv/Downloads/demo)
+2022-09-28 14:03:21.547  INFO 53337 --- [    Test worker] c.e.k.KafkaProducerApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2022-09-28 14:03:22.786  INFO 53337 --- [    Test worker] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-09-28 14:03:22.882  INFO 53337 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.1
+2022-09-28 14:03:22.883  INFO 53337 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 97671528ba54a138
+2022-09-28 14:03:22.883  INFO 53337 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1664391802881
+2022-09-28 14:03:23.160  INFO 53337 --- [| adminclient-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-1 unregistered
+2022-09-28 14:03:23.165  INFO 53337 --- [| adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2022-09-28 14:03:23.165  INFO 53337 --- [| adminclient-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-09-28 14:03:23.165  INFO 53337 --- [| adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2022-09-28 14:03:23.175  INFO 53337 --- [    Test worker] c.e.k.KafkaProducerApplicationTests      : Started KafkaProducerApplicationTests in 1.867 seconds (JVM running for 2.909)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

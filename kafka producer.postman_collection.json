@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "43495d0f-b254-47fe-8643-1b7035676c5f",
+		"name": "kafka producer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post json Event",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n      \"eventName\": \"ShipmentEvent\",\n      \"email\": \"jocomojay05@aol.com\",\n      \"createdAt\": \"2022-05-18T05:11:12.000Z\",\n      \"eventUpdatedAt\": \"2022-05-18 05:11:12 +00:00\",\n      \"eventType\": \"customEvent\",\n      \"dataFields\": {\n        \"sr_order_id\":\"87533533\",\n        \"retailer_name\":\"NBA Store\",\n        \"sr_estimated_delivered_date\":\"2022-09-15\",\n        \"email\":\"rhys.lutsky.osv@fedex.com\",\n        \"edd_met\":\"false\",\n        \"shipment_status\":\"InTransit\",\n        \"retailer_order_id\":\"451-1018-3041\",\n        \"number_of_sr_items\":\"2\",\n        \"order_date\":\"2022-09-13T00:00Z\",\n        \"courier_estimated_delivery_date\":\"2022-09-16\",\n        \"event_message\":\"Departed from Facility\",\n        \"tracking_number\":\"1ZW463200336827399\",\n        \"retailer_code\":\"NBA\",\n        \"return_shipment\":\"false\",\n        \"courier_name\":\"UPS\",\n        \"member_id\":\"a888bf2183c26a878ee8\"\n      }\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/kafka/publish?message=hello world dsd",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"kafka",
+						"publish"
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "hello world dsd"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "text",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/kafka/publish?message=hello world dsd",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"kafka",
+						"publish"
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "hello world dsd"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
